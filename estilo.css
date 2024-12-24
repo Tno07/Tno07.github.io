@@ -1,0 +1,116 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: "Poppins", sans-serif;
+    font-weight: 500;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+.cuotas {
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    padding-top: 0.75rem;
+    padding-bottom: 0.75rem;
+}
+
+.cuotas-texto {
+    font-size: 1.35rem;
+    font-weight: 900;
+}
+
+.logo-lakers {
+    cursor: pointer;
+}
+
+.nav-logo {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo-lakers img {
+    height: 6rem;
+    width: auto;
+    transition: all .5s;
+    margin: 0.4rem 0.4rem 0 0.4rem;
+    padding-top: .2rem;
+    margin-left: 10rem;
+}
+
+.header .logo-lakers img:hover {
+    transform: scale(1.12);
+}
+
+ul {
+    list-style: none;
+    text-decoration: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 2rem;
+    padding-left: 44rem; /*VER ESTO MAÑANA*/
+}
+
+.bars {
+    display: none;
+}
+
+.nav-logo ul li a {
+    display: block;
+    color: #f3f3f3;
+    font-size: 1.8rem;
+    padding: 1rem 1rem;
+    border-radius: 1.5rem;
+    transition: .5s;
+    text-decoration: none;
+}
+
+.active:hover {
+    color:#FDB722;
+}
+
+/*===============================CART=================================*/
+.icons {
+    display: flex;
+}
+
+.cart-img {
+    margin: 1rem;
+    height: 2.3rem;
+    width: auto;
+    align-items: center;
+    justify-content: center;
+}
+
+/*================================SEARCH===============================*/
+
+.search {
+    display: flex;
+    align-items: center;
+    background-color: gray;
+    padding: 1rem 2rem;
+    border-radius: 2rem;
+}
+
+.search-input{
+    width: 12rem;
+    border: none;
+    background-color: transparent;
+    margin-top: 0.3rem ;
+    outline: none;
+}
+
+.search-input::placeholder {
+    font-size: 1.6rem;
+    color: #f3f3f3;
+}
+
+.search-img {
+    height: 20px;
+    width: 20px;
+}

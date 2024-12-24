@@ -14,129 +14,111 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@500&display=swap" rel="stylesheet">
-
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <title>L.A Lakers - Store</title>
 </head>
 <body>
+    <div class="cuotas">
+        <div class="cuotas-txt">6 cuotas sin interés con todas las tarjetas de crédito bancarias</div>
+    </div>
 
     <header class="header">
-        <div class="logo-lakers">
-            <img src="/Video y Logo/Lakers-logo.png" alt="Logo L.A Lakers">
+        <div class="navbar">
+            <div class="logo">
+                <a href="#"><img src="/Video y Logo/Lakers-logo.png" alt="L.A Lakers"></a>
+            </div>
+            <ul class="links">
+                <li><a href="#" class="links-a">Destacados</a></li>
+                <li><a href="#" class="links-a">Productos</a></li>
+                <li><a href="#" class="links-a">Accesorios</a></li>
+                <li><a href="#" class="links-a">Contactos</a></li>
+            </ul>
+            <div class="icons">
+                <div class="search">
+                    <input type="text" placeholder="Search" class="search-input">
+                    <img src="./Iconos/icons8-búsqueda-24.png" alt="Search" class="search-img">
+                </div>
+                <div class="cart">
+                    <a href="#"><img src="./Iconos/icons8-carrito-de-compras-24.png" alt="Cart"></a>
+                </div>
+            </div>
+            <div class="toggle_btn">
+                <i class="fa-solid fa-bars"></i>
+            </div>
         </div>
-        <div class="bars">
-            <div class="line"></div>
-            <div class="line"></div>
-            <div class="line"></div>
+    </header>
+    <!-- Slider -->
+    <div class="slider-body">
+        <div class="slider-container">
+            <button class="arrow arrow-left" id="prevBtn">&#10094;</button>
+            <div class="slider" id="slider">
+            <div class="slide">
+                <p>Hasta 12 cuotas sin interés en bancos seleccionados</p>
+                <a href="#">Ver Promociones</a>
+            </div>
+            <div class="slide">
+                <p>¡Llega mañana! CABA, GBA y Rosario</p>
+                <a href="#">Ver términos y condiciones</a>
+            </div>
+            <div class="slide">
+                <p>Envío gratis en compras superiores a $99.000</p>
+                <a href="#">Ver más</a>
+            </div>
+            </div>
+            <button class="arrow arrow-right" id="nextBtn">&#10095;</button>
         </div>
         
+        <!-- Script -->
+        <script src="/main.js"></script>
+    </div>
 
-        <nav class="nav">
-
-            <ul>
-                <li>
-                    <a href="#" class="active">Inicio</a>
-                </li>
-                <li>
-                    <a href="#" class="active">Product</a>
-                </li>
-                <li>
-                    <a href="#" class="active">Contact</a>
-                </li>
-                <li>
-                    <a href="#" class="icons">
-                        <img src="/Iconos/Perfil-Black.png" alt="Perfil" class="perfil-black">
-                        <img src="/Iconos/Perfil-Original.png" alt="Perfil" class="perfil-original">
-                    </a>
-                </li>
-                <li>
-                    <a href="#" class="icons">
-                        <img src="/Iconos/Corazon-Naranja.png" alt="Heart" class="heart-black">
-                        <img src="/Iconos/Corazon-Violeta.png" alt="Heart" class="heart-original">
-                    </a>
-                </li>
-                <li>
-                    <a href="" class="icons">
-                        <img src="/Iconos/Cart-basket-black.png" alt="Cart" class="cart-black">
-                        <img src="/Iconos/Cart-basketcontorn.png" alt="Cart" class="cart-original">
-                    </a>
-                </li>
-            </ul>
-            
-        </nav>
-
-    </header>
-    <section class="video-lakers">
+    <div class="video-lakers">
+        <video src="/Video y Logo/videoplayback1440.webm" autoplay muted loop></video>
         <div class="text">
             <h1>Everything negative - pressure, challenges - is all an opportunity for me to rise.</h1>
             <p>If you're afraid to fail, then you're probably going to fail.</p>
             <a href="#"><button type="button">BUY NOW</button></a>
         </div>
-            <video autoplay muted loop> 
-                <source src="/Video y Logo/videoplayback1440.webm" type="video/mp4">
-            </video>
-            <div class="layer"></div>
-    </section>
+        <div class="layer"></div>
+    </div>
 
     <main class="container-products" id="list-1">
-
         <h2>Products</h2>
-
         <div class="products-content">
-
             <div class="products">
-                <img src="/Productos/Jersey-1st-Front 2.0.png" alt="" class="products-jersey">
-
+                <img src="/leyendas/GettyImages-1255329835-e1691183817119.jpg" alt="" class="anthony-davis">
                 <div class="products-text">
-                    <h3>Jersey Swingman Icon</h3>
-                    <p class="price">$240</p>
-                    <a href="#" class="quick-view" data-id="1">Quick View</a>
+                    <h3>Jerseys</h3>
                 </div>
             </div>
 
             <div class="products">
-                <img src="/Productos/Jersey-2nd-Front 2.0.png" alt=""class="products-jersey">
+                <img src="/leyendas/lebron-james-confirma-que-retira_104.jpg" alt="" class="lebron-james">
                 <div class="products-text">
-                    <h3>Jersey Swingman Statement</h3>
-                    <p class="price">$240</p>
-                    <a href="#" class="quick-view" data-id="2">Quick View</a>
+                    <h3>Shorts</h3>
                 </div>
             </div>
 
-            <div class="products" id="jersey-3">
-                <img src="/Productos/Jersey-3rd-Front 2.0.png" alt=""class="products-jersey">
+            <div class="products">
+                <img src="/leyendas/D'Angelo Russell Los Angeles Lakers.jpg" alt="" class="dangelo-russel">
                 <div class="products-text">
-                    <h3>Jersey Swingman 3rd</h3>
-                    <p class="price">$240</p>
-                    <a href="#" class="quick-view" data-id="3">Quick View</a>
+                    <h3>Accesories</h3>
                 </div>
             </div>
 
-            <div class="products" id="short">
-                <img src="/Productos/Short-1st-Front 2.0.png" alt=""class="products-short">
+            <div class="products">
+                <img src="/leyendas/1236309648.jpg" alt="" class="jerry-west">
                 <div class="products-text">
-                    <h3>Short Icon</h3>
-                    <p class="price">$84</p>
-                    <a href="#" class="quick-view" data-id="4">Quick View</a>
+                    <h3>Apparel</h3>
                 </div>
             </div>
-
-            <div class="products" id="short">
-                <img src="/Productos/Short-3rd-Front 2.0.png" alt=""class="products-short">
-                <div class="products-text">
-                    <h3>Short Statement</h3>
-                    <p class="price">$84</p>
-                    <a href="#" class="quick-view" data-id="5">Quick View</a>
-                </div>
-            </div>
-
         </div>
-
     </main>
     <footer>
         <div class="container-footer">
             <div class="row">
                 <div class="col" id="company">
-                    <img src="/Video y Logo/Lakers-Footer.jpg" alt="" class="logo-footer">
+                    <img src="/Video y Logo/Lakers-Footer.png" alt="" class="logo-footer">
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit, perspiciatis! Eius quo dignissimos velit quibusdam.</p>
                 </div>
 
@@ -172,4 +154,4 @@
     </footer>
 
 </body>
-</html>
+</html>  

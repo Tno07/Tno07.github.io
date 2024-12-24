@@ -10,139 +10,231 @@ html {
     font-size: 62.5%;
 }
 
-.header {
+.cuotas {
     display: flex;
-    justify-content: space-between;
-    align-items: center;
-    width: 100%;
-    height: 7.45rem;
-    padding: 0 0%;
-    background-color: #f3f3f3;
+    justify-content: center;
+    padding-top: 0.75rem;
+    padding-bottom: 0.75rem;
+    background-color: #111111;
 }
 
-.header .logo-lakers {
+.cuotas-txt {
+    font-size: 1.25rem;
+    font-weight: 900;
+    color: #F5F5F5;
+}
+
+.logo {
     cursor: pointer;
 }
 
-.logo-lakers img {
+li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: #f3f3f3;
+    font-size: 1rem;
+}
+
+a:hover {
+    color: #3F2068;
+}
+
+.header {
+    position: relative;
+    padding: 0 2rem;
+    background-color: #F5F5F5;
+    
+}
+
+.navbar {
+    width: 100%;
     height: 6rem;
+    max-width: 165rem;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #F5F5F5;
+}
+
+.logo img {
+    height: 4.5rem;
     width: auto;
     transition: all .5s;
-    margin: 0.4rem 0.4rem 0 0.4rem;
-    padding-top: .2rem;
-    margin-left: 10rem;
+    margin-top: 0.7rem;
 }
 
-.header .logo-lakers img:hover {
-    transform: scale(1.12);
+.logo img:hover {
+    transform: scale(1.1);
 }
 
-ul {
-    list-style: none;
-    text-decoration: none;
-    background-color: #f3f3f3;
+.navbar .links {
     display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-right: 2rem;
+    gap: 2rem;
+    padding-left: 16.5rem;
 }
 
-.bars {
+.links-a {
+    font-size: 1.5rem;
+    color: #111111;
+}
+
+.navbar .icons {
+    display: flex;
+    gap: 2rem;
+}
+
+.navbar .toggle_btn {
+    font-size: 1.5rem;
+    cursor: pointer;
     display: none;
 }
 
-.nav ul li a {
+/*===============================SEARCH==============================*/
+
+.search {
+    display: flex;
+    align-items: center;
+    background-color: #FDB722;
+    padding: 1rem 2rem;
+    border-radius: 3rem;
+    height: 4rem;
+    margin-top: 0.5rem;
+}
+
+.search-input{
+    width: 10rem;
+    border: none;
+    background-color: transparent;
+    margin-top: 0.3rem ;
+    outline: none;
+    color: #1c1c1d;
+}
+
+.search-input::placeholder {
+    font-size: 1.6rem;
+    color: #1c1c1d;
+}
+
+.search-img {
+    height: 2rem;
+    width: 2rem;
+}
+
+.cart img {
+    margin: 1rem;
+    height: 2.5rem;
+}
+
+/*==============================SLIDER==============================*/
+
+.slider-body {
+/* Estilos generales */
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #562E84;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+/* Contenedor principal */
+.slider-container {
+    position: relative;
+    width: 100%;
+    max-width: 65rem;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    padding: 1rem;
+    height: 5rem;
+}
+
+.slider {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+    width: 100%;
+}
+
+.slide {
+    min-width: 100%;
+    text-align: center;
+}
+
+.slide p {
+    margin: 0;
+    font-size: 1.1rem;
+    color: #F5F5F5;
+}
+
+.slide a {
     display: block;
-    color: #0E0E0E;
-    font-size: 1.8rem;
-    padding: 1rem 1rem;
-    border-radius: 1.5rem;
-    transition: .5s;
-    text-decoration: none;
+    margin-top: 0.5rem;
+    color: #F5F5F5;
+    text-decoration: underline;
+    font-size: 0.9rem;
 }
 
-
-.nav ul li a:hover {
+/* Flechas */
+.arrow {
+    position: relative;
+    background: none;
+    border: none;
     color: #FDB722;
-    background-color: #542581;
+    font-size: 1.2rem;
+    cursor: pointer;
+    padding: 1rem;
 }
 
-.nav ul li .icons:hover {
-    background-color: #f3f3f3;
+.arrow-left {
+    left: 0.5rem;
 }
 
-/*===============================CART=================================*/
-.icons {
-    position: relative;
+.arrow-right {
+    right: 0.5rem;
 }
 
-.icons img {
-    height: 4.5rem;
-    width: auto;
+.arrow:hover {
+    transform: scale(1.1);
+    transition-duration: 3s;
 }
 
-.cart-original {
-    position: absolute;
-    left: 0;
-    margin-left: 1rem;
-    opacity: 0;
-    transition: all .5s;
-}
+/*===============================VIDEO==============================*/
 
-.cart-original:hover {
-    opacity: 1;
-}
-
-/*================================PERFIL===============================*/
-
-.perfil-original {
-    position: absolute;
-    left: 0;
-    opacity: 0;
-    transition: all .6s;
-    margin-left: 1rem;
-}
-
-.perfil-original:hover {
-    opacity: 1;
-}
-
-/*================================HEART=================================*/
-
-.heart-original {
-    position: absolute;
-    left: 0;
-    opacity: 0;
-    transition: all .5s ease;
-    margin-left: 1rem;
-}
-
-.heart-original:hover {
-    opacity: 1;
-}
-
-
-
-/*===============================VIDEO===============================*/
 .video-lakers {
-    height: 92vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     position: relative;
+    width: 100%;
+    height: 70rem;
+    overflow: hidden; /* Oculta las partes del video que se salgan del contenedor */
+}
+
+.video-lakers video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /*Este estilo asegura que el video mantenga su relación de aspecto*/
 }
 
 .text {
-    padding-top: 12%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    width: 50%;
-    margin: auto;
-    position: relative;
-    z-index: 2;
+    position: absolute;
+    top: 42%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    font-size: 2rem;
+    font-weight: bold;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6);
+    text-align: center;
 }
 
 .text h1 {
-    font-size: 3.8rem;
+    font-size: 3.5rem;
     text-align: center;
     color: #f3f3f3;
     font-weight: 700;
@@ -156,15 +248,15 @@ ul {
     margin-top: 3rem;
 }
 
-button {
+.text a button {
     height: 4.5rem;
     border-radius: 3rem;
     padding: 1rem 0;
     width: 15rem;
     background-color: #ffff;
-    font-size: 1.5rem;
+    font-size: 1.4rem;
     color: #3f3f3f;
-    font-weight: 800;
+    font-weight: 900;
     transition: 300ms;
     margin-top: 4rem;
     border: none;
@@ -172,39 +264,17 @@ button {
     cursor: pointer;
 }
 
-button:focus {
+.text a button:focus {
     outline: none;
 }
 
-button:hover {
+.text a button:hover {
     transform: translate(0, -.5rem);
     background-color: #562E84;
     color: #FDB722;
 }
 
-video {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-
-}
-
-.layer {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-color: #000000;
-    opacity: 0.6;
-    mix-blend-mode: overlay;
-
-}
-
-/*================================PRODUCTOS===============================*/
+/*============================PRODUCTOS============================*/
 
 .container-products {
     padding: 5rem 0;
@@ -223,23 +293,27 @@ video {
 
 .products-content {
     display: flex;
-    margin: 0 5rem;
+    justify-content: center;
+    text-align: center;
+    gap: 2rem;
+    padding: 2rem;
     flex-wrap: wrap;
-
 }
 
 .products {
-    text-align: center;
-    padding: 2rem;
-    justify-content: center;
-    align-items: center;
-    margin-left: 0.5rem;
     position: relative;
-    flex-grow: 1;
+    flex: 1 1 calc(25% - 2rem);
+    max-width: 35rem;
+}
+
+.products img {
+    width: 35rem;
+    height: 35rem;
+    border-radius: 1rem;
 }
 
 .products h3 {
-    font-size: 1.8rem;
+    font-size: 2.5rem;
     color: #111111;
     font-family: "Oswald", sans-serif;
     font-weight: 400;
@@ -247,74 +321,16 @@ video {
     margin-bottom: 1rem;
 }
 
-.products p {
-    font-size: 1.7rem;
-    color: #111111;
-    margin-bottom: 1rem;
-    font-weight: 600;
-}
-
-.quick-view {
-    display: inline-block;
-    padding: 1rem 2rem;
-    background-color: #111111;
-    color: #f3f3f3;
-    border-radius: 1.3rem;
-    text-decoration: none;
-    font-size: 1.4rem;
-    transition: 0.3s ease;
-}
-
-.quick-view:hover {
-    background-color: #562E84;
-    color: #FDB722;
-    transform: translate(0, -.5rem);
-}
-
-.quick-view::selection {
-    background-color: none;
-}
-
-/*=============================JERSEY============================*/
-
-.products img {
-    height: 35rem;
-    width: auto;
-}
-
-.products-jersey {
-    transition: 600ms ease;
+.products {
+    transition: 400ms ease;
     cursor: pointer;
 }
 
-.products-jersey:hover {
+.products:hover {
     transform: scale(1.05);
 }
 
-/*=============================SHORT==============================*/
-
-#short img {
-    height: auto;
-    width: 22rem;
-    margin: 2.9rem 0;
-}
-
-#short img {
-    height: auto;
-    width: 22rem;
-    margin: 2.9rem 0;
-}
-
-.products-short {
-    transition: 600ms ease;
-    cursor: pointer;
-}
-
-.products-short:hover {
-    transform: scale(1.05);
-}
-
-/*================================FOOTER============================*/
+/*==============================FOOTER============================*/
 
 body footer {
     display: flex;
@@ -323,7 +339,6 @@ body footer {
     flex-direction: column;
     min-height: 30vh;
 }
-
 
 footer {
     background-color: #542581;
@@ -400,7 +415,6 @@ footer {
     opacity: 0;
 }
 
-
 .col .links a:hover::before {
     opacity: 1;
 }
@@ -420,10 +434,11 @@ body::-webkit-scrollbar-thumb {
     border-radius: 4rem;
 }
 
-.bars {
-    display: none;
+@media(max-width:1500px) {
+    .products {
+        flex: 1 1 100%;
+    }
 }
-
 
 @media(max-width:1100px) {
     .row {
@@ -467,11 +482,6 @@ body::-webkit-scrollbar-thumb {
     }
 
 }
-
-
-
-
-
 
 @media(max-width:700px) {
     .header {
@@ -527,8 +537,6 @@ body::-webkit-scrollbar-thumb {
         padding-top: 40%;
     }
 }
-
-
 
 @media(max-width:570px) {
 
