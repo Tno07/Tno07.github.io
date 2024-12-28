@@ -23,54 +23,60 @@
     </div>
 
     <header class="header">
+
         <div class="navbar">
             <div class="logo">
                 <a href="#"><img src="/Video y Logo/Lakers-logo.png" alt="L.A Lakers"></a>
             </div>
+    
             <ul class="links">
                 <li><a href="#" class="links-a">Destacados</a></li>
                 <li><a href="#" class="links-a">Productos</a></li>
                 <li><a href="#" class="links-a">Accesorios</a></li>
                 <li><a href="#" class="links-a">Contactos</a></li>
             </ul>
+
             <div class="icons">
-                <div class="search">
-                    <input type="text" placeholder="Search" class="search-input">
-                    <img src="./Iconos/icons8-búsqueda-24.png" alt="Search" class="search-img">
+                <div class="search-container">
+                    <button class="search-button" id="searchButton">🔍</button>
+                    <div class="search-menu" id="searchMenu">
+                        <div class="search-header">
+                            <img src="/Video y Logo/Lakers Icono.ico" alt="Lakers" class="logo">
+                            <button class="close-button" id="closeButton">Cerrar</button>
+                        </div>
+                    <input type="text" class="search-input" placeholder="¿Qué estás buscando?"/>
+                    </div>
                 </div>
-                <div class="cart">
-                    <a href="#"><img src="./Iconos/icons8-carrito-de-compras-24.png" alt="Cart"></a>
-                </div>
-            </div>
-            <div class="toggle_btn">
-                <i class="fa-solid fa-bars"></i>
+
+                <a href="#" class="cart"><img src="./Iconos/icons8-carrito-de-compras-24.png" alt="Cart"></a>
+                <ion-icon id="btn-menu" name="menu"></ion-icon>
             </div>
         </div>
     </header>
+
+
     <!-- Slider -->
     <div class="slider-body">
-        <div class="slider-container">
-            <button class="arrow arrow-left" id="prevBtn">&#10094;</button>
-            <div class="slider" id="slider">
-            <div class="slide">
-                <p>Hasta 12 cuotas sin interés en bancos seleccionados</p>
-                <a href="#">Ver Promociones</a>
+        <button class="arrow arrow-left" id="prevBtn">&#10094;</button>
+            <div class="slider-container">
+                <div class="slider" id="slider">
+                    <div class="slide" id="slide-1">
+                        <p>Hasta 12 cuotas sin interés en bancos seleccionados</p>
+                        <a href="#">Ver Promociones</a>
+                    </div>
+                    <div class="slide" id="slide-3">
+                        <p>¡Llega mañana! CABA y GBA</p>
+                        <a href="#">Ver términos y condiciones</a>
+                    </div>
+                    <div class="slide" id="slide-3">
+                        <p>Envío gratis en las compras superiores a $99.000</p>
+                        <a href="#">Ver más</a>
+                    </div>
+                </div>
             </div>
-            <div class="slide">
-                <p>¡Llega mañana! CABA, GBA y Rosario</p>
-                <a href="#">Ver términos y condiciones</a>
-            </div>
-            <div class="slide">
-                <p>Envío gratis en compras superiores a $99.000</p>
-                <a href="#">Ver más</a>
-            </div>
-            </div>
-            <button class="arrow arrow-right" id="nextBtn">&#10095;</button>
-        </div>
-        
-        <!-- Script -->
-        <script src="/main.js"></script>
+        <button class="arrow arrow-right" id="nextBtn">&#10095;</button>
     </div>
+    <script src="/main.js"></script>
 
     <div class="video-lakers">
         <video src="/Video y Logo/videoplayback1440.webm" autoplay muted loop></video>
@@ -86,67 +92,73 @@
         <h2>Products</h2>
         <div class="products-content">
             <div class="products">
-                <img src="/leyendas/GettyImages-1255329835-e1691183817119.jpg" alt="" class="anthony-davis">
+                <img src="/leyendas/lebron.jpg" alt="" class="lebron-james">
                 <div class="products-text">
                     <h3>Jerseys</h3>
                 </div>
             </div>
 
             <div class="products">
-                <img src="/leyendas/lebron-james-confirma-que-retira_104.jpg" alt="" class="lebron-james">
+                <img src="/leyendas/davies.jpg" alt="" class="anthony-davis">
                 <div class="products-text">
                     <h3>Shorts</h3>
                 </div>
             </div>
 
             <div class="products">
-                <img src="/leyendas/D'Angelo Russell Los Angeles Lakers.jpg" alt="" class="dangelo-russel">
+                <img src="/leyendas/russel.jpg" alt="" class="dangelo-russel">
                 <div class="products-text">
                     <h3>Accesories</h3>
                 </div>
             </div>
 
             <div class="products">
-                <img src="/leyendas/1236309648.jpg" alt="" class="jerry-west">
+                <img src="/leyendas/1236309648.jpg" alt="" class="austin-reaves">
                 <div class="products-text">
                     <h3>Apparel</h3>
                 </div>
             </div>
         </div>
     </main>
+
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    <script src="/main.js"></script>
+
     <footer>
         <div class="container-footer">
             <div class="row">
                 <div class="col" id="company">
                     <img src="/Video y Logo/Lakers-Footer.png" alt="" class="logo-footer">
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit, perspiciatis! Eius quo dignissimos velit quibusdam.</p>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit, perspiciatis! Eius quo dignissimos velit quibusdam Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit, perspiciatis! Eius quo dignissimos velit quibusdam.</p>
                 </div>
-
-                <div class="col" id="services">
-                    <h3>Services</h3>
-                    <div class="links">
-                        <a href="#">Contact Us</a>
-                        <a href="#">Help</a>
-                        <a href="#">Track Order</a>
-                        <a href="#">Card Design</a>
+                <div class="container-col">
+                    <div class="col" id="container-links-footer">
+                        <h3>Services</h3>
+                        <ul class="links-footer">
+                            <li><a href="#">Contact Us</a></li>
+                            <li><a href="#">Help</a></li>
+                            <li><a href="#">Track Order</a></li>
+                            <li><a href="#">Card Design</a></li>
+                        </ul>
                     </div>
-                </div>
-                <div class="col" id="link">
-                    <h3>Links</h3>
-                    <div class="links">
-                        <a href="#">Services</a>
-                        <a href="#">Safe Shopping</a>
-                        <a href="#">90-Days Returns</a>
-                        <a href="#">Promo Terms</a>
+                    <div class="col" id="container-links-footer">
+                        <h3>Links</h3>
+                        <ul class="links-footer">
+                            <li><a href="#">Services</a></li>
+                            <li><a href="#">Safe Shopping</a></li>
+                            <li><a href="#">90-Days Returns</a></li>
+                            <li><a href="#">Promo Terms</a></li>
+                        </ul>
                     </div>
-                </div>
-                <div class="col" id="information">
-                    <h3>Information</h3>
-                    <div class="links">
-                        <a href="#">My Account</a>
-                        <a href="#">About Us</a>
-                        <a href="#">Affiliate Program</a>
-                        <a href="#">Gift Cards</a>
+                    <div class="col" id="container-links-footer">
+                        <h3>Information</h3>
+                        <ul class="links-footer">
+                            <li><a href="#">My Account</a></li>
+                            <li><a href="#">About Us</a></li>
+                            <li><a href="#">Affiliate Program</a></li>
+                            <li><a href="#">Gift Cards</a></li>
+                        </ul>
                     </div>
                 </div>
             </div>
