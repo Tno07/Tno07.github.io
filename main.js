@@ -81,3 +81,18 @@ searchButton.addEventListener('click', () => {
 closeButton.addEventListener('click', () => {
     searchMenu.style.display = 'none';
 });
+
+
+// Mostrar el menú y ocultar el botón al hacer clic en la lupa
+searchButton.addEventListener('click', () => {
+    searchMenu.style.display = 'block';
+    searchButton.style.display = 'none'; // Oculta la lupa
+});
+
+  // Ocultar el menú y volver a mostrar el botón al hacer clic en "Cerrar"
+closeButton.addEventListener('click', () => {
+    searchMenu.style.display = 'none';
+    searchButton.style.display = 'block'; // Muestra la lupa de nuevo
+});
+
+
