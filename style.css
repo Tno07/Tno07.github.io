@@ -112,19 +112,19 @@ li {
 /*===============================SEARCH==============================*/
 
 .img-search {
-    height: 2.2rem;
-    background-color: none;
+    height: 2.4rem;
+
 }
 
 .search-container {
 position: relative;
 padding: 1rem;
-top: 0.3rem;
+top: 0.35rem;
 }
 
 .search-button {
 position: static;
-background-color: white;
+background-color: #F5F5F5;
 border: none;
 cursor: pointer;
 font-size: 1.8rem;
