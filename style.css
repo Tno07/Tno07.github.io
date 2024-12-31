@@ -113,14 +113,14 @@ li {
 
 .img-search {
     height: 2.4rem;
-    background-color: none;
+    background-color: #F5F5F5;
 }
 
 .search-container {
     position: relative;
     padding: 1rem;
     top: 0.35rem;
-    background-color: none;
+    background-color: #F5F5F5;
 }
 
 .search-button {
@@ -128,7 +128,7 @@ li {
     border: none;
     cursor: pointer;
     font-size: 1.8rem;
-    background-color: none;
+    background-color: #F5F5F5;
 }
 
 .search-menu {
