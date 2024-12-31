@@ -113,37 +113,38 @@ li {
 
 .img-search {
     height: 2.4rem;
-
+    background-color: none;
 }
 
 .search-container {
-position: relative;
-padding: 1rem;
-top: 0.35rem;
+    position: relative;
+    padding: 1rem;
+    top: 0.35rem;
+    background-color: none;
 }
 
 .search-button {
-position: static;
-background-color: #F5F5F5;
-border: none;
-cursor: pointer;
-font-size: 1.8rem;
+    position: static;
+    border: none;
+    cursor: pointer;
+    font-size: 1.8rem;
+    background-color: none;
 }
 
 .search-menu {
-position: fixed;
-top: 3rem;
-left: 0;
-width: 100%;
-background-color: white;
-box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-padding: 2rem;
-display: none; /* Oculto por defecto */
-z-index: 1000;
+    position: fixed;
+    top: 3rem;
+    left: 0;
+    width: 100%;
+    background-color: #F5F5F5;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    padding: 2rem;
+    display: none; /* Oculto por defecto */
+    z-index: 1000;
 
-opacity: 0;
-transform: translateX(100%); /* Comienza fuera de la pantalla a la derecha */
-transition: transform 0.4s ease, opacity 0.4s ease;
+    opacity: 0;
+    transform: translateX(100%); /* Comienza fuera de la pantalla a la derecha */
+    transition: transform 0.4s ease, opacity 0.4s ease;
 }
 
 .search-menu[style*="display: block"] {
@@ -152,30 +153,30 @@ transition: transform 0.4s ease, opacity 0.4s ease;
 }
 
 .search-menu .search-header {
-display: flex;
-justify-content: space-between;
-align-items: center;
-margin-bottom: 2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 2rem;
 }
 
 .logo {
-width: 4.5rem;
+    width: 4.5rem;
 }
 
 .close-button {
-background: none;
-border: none;
-cursor: pointer;
-font-size: 1.6rem;
-color: black;
+    background: none;
+    border: none;
+    cursor: pointer;
+    font-size: 1.6rem;
+    color: black;
 }
 
 .search-input {
-width: 100%;
-padding: 1.5rem;
-border: 1px solid #ddd;
-border-radius: 1rem;
-font-size: 1.6rem;
+    width: 100%;
+    padding: 1.5rem;
+    border: 1px solid #ddd;
+    border-radius: 1rem;
+    font-size: 1.6rem;
 }
 
 /*==============================SLIDER==============================*/
