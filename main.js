@@ -22,12 +22,6 @@ setInterval(() => showSlide(index + 1), 3000);
 
 
 
-
-
-
-
-
-
 //Script menu de hambruguesas
 const links = document.querySelector(".links");
 const header = document.querySelector("header");
@@ -64,35 +58,5 @@ responsive();
 
 window.addEventListener("resize",responsive);
 
-
-
-//Search
-
-const searchButton = document.getElementById('searchButton');
-const closeButton = document.getElementById('closeButton');
-const searchMenu = document.getElementById('searchMenu');
-
-// Mostrar el menú al hacer clic en la lupa
-searchButton.addEventListener('click', () => {
-    searchMenu.style.display = 'block';
-});
-
-// Ocultar el menú al hacer clic en "Cerrar"
-closeButton.addEventListener('click', () => {
-    searchMenu.style.display = 'none';
-});
-
-
-// Mostrar el menú y ocultar el botón al hacer clic en la lupa
-searchButton.addEventListener('click', () => {
-    searchMenu.style.display = 'block';
-    searchButton.style.display = 'none'; // Oculta la lupa
-});
-
-  // Ocultar el menú y volver a mostrar el botón al hacer clic en "Cerrar"
-closeButton.addEventListener('click', () => {
-    searchMenu.style.display = 'none';
-    searchButton.style.display = 'block'; // Muestra la lupa de nuevo
-});
 
 
