@@ -689,11 +689,13 @@ body::-webkit-scrollbar-thumb {
 }
 
 @media(max-width: 500px) {
+    .logo img {
+        height: 3.8rem;
+    }
+    
     .cuotas-txt {
         font-size: 1rem;
     }
-
-        /*FOOTER*/
 
     #company {
         display: inline;
