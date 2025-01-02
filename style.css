@@ -627,8 +627,6 @@ body::-webkit-scrollbar-thumb {
 .cart img {
     padding-right: 1rem;
 }
-
-
 }
 
 @media(max-width: 850px) {
@@ -733,7 +731,6 @@ body::-webkit-scrollbar-thumb {
     }
 
 }
-
 
 @media(max-width: 400px) {
     .video-lakers {
