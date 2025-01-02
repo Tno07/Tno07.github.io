@@ -688,7 +688,7 @@ body::-webkit-scrollbar-thumb {
     }
 }
 
-@media(max-width: 500px) {
+@media(max-width: 550px) {
     .logo img {
         height: 3.8rem;
     }
