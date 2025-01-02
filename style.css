@@ -636,7 +636,7 @@ body::-webkit-scrollbar-thumb {
     .container-footer {
     display: flex;
     flex-direction: column;
-    margin: 6rem 6rem -2rem 6rem;
+    margin: 6rem 1rem -2rem 1rem;
     }
 
     .row {
@@ -647,10 +647,6 @@ body::-webkit-scrollbar-thumb {
         display: flex;
         flex-direction: column;
         width: 100%;
-    }
-
-    .col {
-        margin-bottom: 20px;
     }
 
     .links-footer {
@@ -669,7 +665,7 @@ body::-webkit-scrollbar-thumb {
     }
 
     .logo-footer {
-        margin-bottom: 20px;
+        margin-left: -1rem;
     }
 
 }
@@ -705,6 +701,11 @@ body::-webkit-scrollbar-thumb {
         display: inline;
         justify-content: center;
         margin-left: 0;
+        width: 100%;
+    }
+
+    .col p {
+        width: 90%;
     }
 
     .logo-footer {
